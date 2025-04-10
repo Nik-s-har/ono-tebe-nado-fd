@@ -7,7 +7,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Raleway-Bold, sans-serif;
+  font-weight: bold;
+  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -49,6 +50,7 @@ h3 {
 .address {
   width: 240px;
   font-size: 18px;
+  font-style: normal;
   line-height: 24px;
 }
 
@@ -62,8 +64,9 @@ h3 {
   position: relative;
   padding: 50px;
   background-color: black;
-  background-image: url(/images/cover.jpg);
-  background-size: cover;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+/*  background-size: cover; */
 }
 
 .overlay {
@@ -72,7 +75,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover_title {
@@ -85,22 +88,22 @@ h3 {
   margin-top: 135px;
   margin-bottom: 126px;
   color: white;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 100px;
   line-height: 76%;
   letter-spacing: 0.3em;
 }
 
-.cover_title_first_word {
+.letter-spacing-extended {
   align-items: start;
 }
 
-.cover_title_second_word {
+.aligned-text {
   margin-left: 329px;
   letter-spacing: 0.27em;
 }
 
-.cover_title_third_word {
+.aligned-text_right {
   margin-left: 613px;
 }
 
@@ -266,6 +269,10 @@ h3 {
   justify-self: center;
   align-items: center;
   list-style: none;
+}
+
+.link-active {
+  text-decoration: none;
 }
 
 .footer__social-list {
